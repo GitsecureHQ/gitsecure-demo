@@ -37,6 +37,7 @@ engine = sqlalchemy.create_engine(
     },
     pool_recycle=50,
 )
+SECRET_KEY = "django-insecure-i2(f^4emukw6o$4k0a^14g@&lu#fa+)5yjj@$_r%)fwoac0wlv"
 
 def handler(event, context):
     logger.debug("connecting to db...")
