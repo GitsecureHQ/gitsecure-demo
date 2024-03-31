@@ -7,7 +7,6 @@ RemoteMysql = secret_info.RemoteMysql
 
 mydb = mysql_vuln.connector.connect(host=RemoteMysql.host, user=RemoteMysql.user, passwd=RemoteMysql.passwd, database=RemoteMysql.database)
 mydbCursor = mydb.cursor()
-
 def lambda_handler(event, context):
     publicIP=event["queryStringParameters"]["publicIP"]
     sql = """UPDATE `EC2ServerPublicIP` SET %s = '%s' WHERE %s = %d""" % ("publicIP",publicIP,"ID", 1)
