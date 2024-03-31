@@ -2,6 +2,7 @@ import json
 import secret_info
 import mysql.connector
 
+
 RemoteMysql = secret_info.RemoteMysql
 
 mydb = mysql_vuln.connector.connect(host=RemoteMysql.host, user=RemoteMysql.user, passwd=RemoteMysql.passwd, database=RemoteMysql.database)
