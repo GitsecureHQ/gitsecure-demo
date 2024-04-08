@@ -13,7 +13,6 @@ app.get('/test', (req, res) => {
 })
 
 app.get('/test1', (req, res) => {
-  // ruleid: tainted-sql-string
   const [results, metadata] = await sequelize.query("SELECT * FROM `users`" + " WHERE id = '" + req.query.message + "'");
   res.send(results)
 })
