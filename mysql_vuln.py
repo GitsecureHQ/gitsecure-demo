@@ -9,11 +9,11 @@ mydb = mysql_vuln.connector.connect(host=RemoteMysql.host, user=RemoteMysql.user
 mydbCursor = mydb.cursor()
 def lambda_handler(event, context):
     publicIP=event["queryStringParameters"]["publicIP"]
-    sql = """UPDATE `EC2ServerPublicIP` SET %s = '%s' WHERE %s = %d""" % ("publicIP",publicIP,"ID", 1)
+    sql1 = """UPDATE `EC2ServerPublicIP` SET %s = '%s' WHERE %s = %d""" % ("publicIP",publicIP,"ID", 1)
 
     print("""UPDATE `EC2ServerPublicIP` SET %s = '%s' WHERE %s = %d""" % ("publicIP",publicIP,"ID", 1))
     
-    mydbCursor.execute(sql)
+    mydbCursor.execute(sql1)
 
     sql2 = "UPDATE `EC2ServerPublicIP` SET %s = '%s' WHERE foo = %s" % ("one", "two", "three")
 

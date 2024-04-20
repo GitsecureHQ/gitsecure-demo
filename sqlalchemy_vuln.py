@@ -7,7 +7,7 @@ import sqlalchemy
 from aws_lambda_powertools import Logger, Tracer
 from aws_lambda_powertools.utilities.typing import LambdaContext
 
-SERVICE = "lambda-connection-pooling-demo"
+SERVICE = "lambda-connection-demo"
 logger = Logger(service=SERVICE)
 tracer = Tracer(service=SERVICE)
 
