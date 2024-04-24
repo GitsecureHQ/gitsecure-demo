@@ -5,7 +5,6 @@ from django.template import loader
 
 def not_really_safe(request):
     template = loader.get_template('contents.html')
-    # ruleid:avoid-mark-safe
     not_actually_safe = mark_safe(
         """
         <div>
