@@ -11,7 +11,7 @@ def bad_deserialization
     data = CSV.dump(o)
     obj = CSV.load(data)
 
-    o = Klass.new("hello\n")
+    o = Klass.new("helloo\n")
     data = cookies['some_fields']
     obj = Oj.object_load(data)
     obj = Oj.load(data)
