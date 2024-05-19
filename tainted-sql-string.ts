@@ -6,7 +6,7 @@ const sequelize = new Sequelize('sqlite::memory:')
 const util = require('util')
 
 app.get('/test', (req, res) => {
-  // ruleid: tainted-sql-string
+  // ruleid: tainted-sql-strings
   const query = "SELECT * FROM `users`" + " WHERE id = '" + req.query.message + "'"
   const [results, metadata] = await sequelize.query(query);
   res.send(results)
