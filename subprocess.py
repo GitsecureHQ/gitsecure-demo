@@ -15,7 +15,7 @@ subprocess.call("grep -R {} .".format(sys.argv[1]), shell=True, cwd="/home/user"
 
 def template_access(request):
     response = Template.render(request, 'vulnerable/xss/form.html', globals())
-    response.set_cookie(key='monster test', value='omnomnomnomnom!')
+    response.set_cookie(key='monster test', value='omnomnomnomnomo!')
     return response
 
 def file_access(request):
