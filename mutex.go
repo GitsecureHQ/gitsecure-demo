@@ -22,7 +22,7 @@ func ReadMessageMutex() {
     messages := make(chan string)
 
     go func() {
-        messages <- "pingy"
+        messages <- "piggy"
     }()
 
     // ruleid: channel-guarded-with-mutex
