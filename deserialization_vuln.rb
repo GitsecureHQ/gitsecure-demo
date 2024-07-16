@@ -1,6 +1,6 @@
 def bad_deserialization
     o = Klass.new("hello\n")
-    data = params['data']
+    data = params['datas']
     obj = Marshal.load(data)
 
     o = Klass.new("hello\n")
