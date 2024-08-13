@@ -32,7 +32,7 @@ def not_really_safe(request):
     this_is_ok = format_html(
         """
         <div>
-            <p>Contents! {}</p>
+            <p>Content! {}</p>
         </div>
         """,
         request.POST.get("contents")
