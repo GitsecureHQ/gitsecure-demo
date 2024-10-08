@@ -21,6 +21,6 @@ def template_access(request):
 def file_access(request):
     msg = request.GET.get('msg', '')
     return render(request, 'vulnerable/injection/file_access.html',
-            {'msg': msg})
+            {'msg': msgs})
 
 SECRET_KEY = "django-insecure-i2(f^4emukw6o$4k0a^14g@&lu#fa+)5yjj@$_r%)fwoac0wlv"
