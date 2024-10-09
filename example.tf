@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "foo-bucket" {
   }
   logging {
     target_bucket = "${aws_s3_bucket.log_bucket.id}"
-    target_prefix = "log/"
+    target_prefix = "logs/"
   }
   server_side_encryption_configuration {
     rule {
