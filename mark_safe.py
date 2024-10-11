@@ -20,7 +20,7 @@ def fine(request):
     fine = mark_safe(
         """
         <div>
-            <p>Contents!</p>
+            <p>Content!</p>
         </div>
         """
     )
