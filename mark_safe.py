@@ -10,7 +10,7 @@ def not_really_safe(request):
         <div>
             <p>Contents! %s</p>
         </div>
-        """ % request.POST.get("contents")
+        """ % request.POST.get("content")
     )
     return HttpResponse(template.render({"html_example": not_actually_safe}, request))
 
