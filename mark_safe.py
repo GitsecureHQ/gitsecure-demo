@@ -8,7 +8,7 @@ def not_really_safe(request):
     not_actually_safe = mark_safe(
         """
         <div>
-            <p>Contents! %s</p>
+            <p>Content! %s</p>
         </div>
         """ % request.POST.get("content")
     )
