@@ -26,7 +26,7 @@ resource aws_iam_role "iam_for_eks" {
     git_last_modified_by = "nimrodkor@gmail.com"
     git_modifiers        = "nimrodkor"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "terragoats"
     yor_trace            = "de052596-21a0-43de-8153-469add277b18"
   }
 }
